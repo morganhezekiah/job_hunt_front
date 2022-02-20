@@ -3,8 +3,9 @@ import virtual from "../../assets/images/62.svg";
 
 const Wrapper = ({ title, children }) => {
   return (
+   <>
+     <h1 className="text-black text-4xl font-semibold m-5">Job<span style={{color:"#666AF6"}}>unt.ng</span></h1>
     <div className="flex flex-col mt-36   md:flex-row md:mx-0 lg:px-12">
-      
       <section className="bg-white  basis-1/2">
         <div className="shadow-lg w-72 mx-auto md:mx-12 lg:mx-auto lg:w-96 lg:mx-0 h-80 lg:h-96  lg:mt-12 ">
           <h1
@@ -22,6 +23,7 @@ const Wrapper = ({ title, children }) => {
         </div>
       </section>
     </div>
+   </>
   );
 };
 

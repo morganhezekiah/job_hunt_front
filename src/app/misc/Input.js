@@ -15,7 +15,7 @@ const Input = ({ label, onChange, value, secured, seePasswordRequest }) => {
             className=" p-2 rounded-sm text-black outline-none"
           />
           <div className='pr-2' style={{  backgroundColor:'#E8EEF3'}} onClick={()=>setSecuredState(!securedState)}>
-          <i class="fas fa-eye text-xl" style={{color:'#666AF6'}}></i>
+          {securedState ? <i class="fas fa-eye-slash  cursor-pointer" style={{color:'#666AF6'}}></i> : <i class="fas fa-eye cursor-pointer" style={{color:'#666AF6'}}></i>}
           </div>
         </div>
       ) : (

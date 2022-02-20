@@ -27,10 +27,27 @@ const Register = () => {
   const [passwordError, setPasswordError] = useState("");
   const [passwordConfirmError, setPaswordConfirmError] = useState("");
 
-  useEffect(async () => {
-    const token = await GET_USER_TOKEN();
-    token !== null && token.length > 1 && navigate("/users/dashboard");
-  }, []);
+  // useEffect(async () => {
+  //   const token = await GET_USER_TOKEN();
+  //   token !== null && token.length > 1 && navigate("/users/dashboard");
+  // }, []);
+
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     // You can await here
+  //     const response = await MyAPI.getData(someId);
+  //     // ...
+  //   }
+  //   fetchData();
+  // }, [someId]); 
+
+  useEffect(() => {
+    async function fetchData(){
+      const token = GET_USER_TOKEN();
+      token !== null && token.length > 1 && navigate("/users/dashboard");
+    }
+    fetchData()
+  }, [navigate]);
 
   useEffect(() => {
     if (RegisterReducer.message.length > 0) {

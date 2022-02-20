@@ -93,33 +93,33 @@ const Register = () => {
   };
 
   return (
-    <Wrapper title="Register For an Online Class">
+    <Wrapper title="REGISTER FOR AN ONLINE CLASS">
       <form onSubmit={handleUserRegisterRequest}>
         <Input
           onChange={(e) => setFullName(e.target.value)}
-          label={"Full Name"}
+          label={"USERNAME"}
         />
         <ErrorText text={fullNameError} />
 
-        <Input onChange={(e) => setEmail(e.target.value)} label={"Email"} />
+        <Input onChange={(e) => setEmail(e.target.value)} label={"EMAIL"} />
         <ErrorText text={emailError} />
 
         <Input
           onChange={(e) => setPassword(e.target.value)}
-          label={"Password"}
+          label={"PASSWORD"}
           secured={true}
         />
         <ErrorText text={passwordError} />
 
         <Input
           onChange={(e) => setPasswordConfirmation(e.target.value)}
-          label={"Confirm Password"}
+          label={"CONFIRM PASSWORD"}
           secured={true}
         />
         <ErrorText text={passwordConfirmError} />
 
         <Button
-          title="Register"
+          title="REGISTER"
           disabled={AppLoading}
           onClick={handleUserRegisterRequest}
         />

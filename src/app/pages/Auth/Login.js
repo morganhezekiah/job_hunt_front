@@ -72,7 +72,7 @@ const Login = () => {
   };
 
   return (
-    <Wrapper title="Login To Your account">
+    <Wrapper title="LOGIN TO YOUR ACCOUNT">
       <form onSubmit={handleUserLoginRequest}>
         <Input
           value={email}

@@ -11,7 +11,6 @@ import { useDispatch, useSelector } from "react-redux";
 import RegisterUserDispatcher from "../../store/dispatchers/Auth/Register";
 import { GET_USER_TOKEN } from "../../misc/helpers/authTokenManager";
 
-let AUTH_ERROR = false;
 const Register = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -73,7 +72,7 @@ const Register = () => {
 
       !RegisterReducer.error && navigate("/users/login");
     }
-  }, [RegisterReducer.message]);
+  }, [RegisterReducer.error, RegisterReducer.message, navigate]);
 
   const handleUserRegisterRequest = async (e) => {
     e.preventDefault();

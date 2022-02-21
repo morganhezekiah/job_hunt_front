@@ -26,10 +26,19 @@ const Login = () => {
   const [ seePassword, setSeePassword ] = useState(false);
 
 
-  useEffect(async ()=>{
-    const token = await GET_USER_TOKEN();
-    token !== null && token.length > 1 && navigate("/users/dashboard");
-  }, []);
+  // useEffect(async ()=>{
+  //   const token = await GET_USER_TOKEN();
+  //   token !== null && token.length > 1 && navigate("/users/dashboard");
+  // }, []);
+
+  useEffect(() => {
+    const fetchUserToken = async () => {
+      const token =  await GET_USER_TOKEN();
+      token !== null && token.length > 1 && navigate("/users/dashboard");
+    }
+
+    fetchUserToken()
+  },[navigate])
 
   useEffect(() => {
     if (LoginReducer.message.length > 0) {
@@ -58,7 +67,7 @@ const Login = () => {
         navigate("/users/dashboard");
       }
     }
-  }, [LoginReducer.message]);
+  }, [LoginReducer.error, LoginReducer.message, dispatch, navigate]);
 
   const handleUserLoginRequest = async (e) => {
     e.preventDefault();

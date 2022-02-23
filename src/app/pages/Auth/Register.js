@@ -26,19 +26,6 @@ const Register = () => {
   const [passwordError, setPasswordError] = useState("");
   const [passwordConfirmError, setPaswordConfirmError] = useState("");
 
-  // useEffect(async () => {
-  //   const token = await GET_USER_TOKEN();
-  //   token !== null && token.length > 1 && navigate("/users/dashboard");
-  // }, []);
-
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     // You can await here
-  //     const response = await MyAPI.getData(someId);
-  //     // ...
-  //   }
-  //   fetchData();
-  // }, [someId]); 
 
   useEffect(() => {
     async function fetchData(){
@@ -99,13 +86,7 @@ const Register = () => {
       ? setPaswordConfirmError("Password and its confirmation are not same")
       : setPaswordConfirmError("");
 
-    passwordConfirmation.length > 0 &&
-      password.length > 0 &&
-      email.length > 0 &&
-      fullName.length > 0 &&
-      (await dispatch(
-        RegisterUserDispatcher({ email, password, fullName, age: 18 })
-      ));
+    passwordConfirmation.length > 0 && password.length > 0 && email.length > 0 && fullName.length > 0 && dispatch(RegisterUserDispatcher({ email, password, fullName, age: 18 }));
   };
 
   return (

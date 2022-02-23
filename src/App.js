@@ -4,6 +4,7 @@ import store from "./app/store";
 import { ToastContainer } from "react-toastify";
 import ForgotPassword from "./app/pages/Auth/ForgotPassword";
 import Dashboard from "./app/pages/Dashboard";
+import EmailActivation from "./app/pages/Auth/EmailActivation";
 
 
 const App = () => {

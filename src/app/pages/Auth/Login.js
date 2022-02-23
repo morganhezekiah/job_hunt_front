@@ -77,7 +77,7 @@ const Login = () => {
 
     password.length < 1?setPasswordError("Please enter your Password"):setPasswordError("");
 
-    password.length > 0 && email.length > 0 && (await dispatch(LoginUserDispatcher({ email, password })));
+    password.length > 0 && email.length > 0 &&  dispatch(LoginUserDispatcher({ email, password }));
   };
 
   return (

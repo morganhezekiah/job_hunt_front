@@ -23,7 +23,7 @@ const Banner = ()=>{
                     <div className="row">
                       <div className="col-lg-12">
                         <h6>OWERRI JOB HUNT</h6>
-                        <h2>We Help You Land That Dream Job.</h2>
+                        <h2>Over 2000 local and international jobs open for grabs!</h2>
                         <p>
                           This template is brought to you by OwerriJobHunt
                           website. Feel free to use this for a commercial

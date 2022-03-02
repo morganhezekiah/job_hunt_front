@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import EmailValidationDispatcher, { resetEmailActivationStoreState } from "../../store/dispatchers/Auth/EmailValidation";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Loader from "../../misc/Loader";
 
 
 
@@ -56,17 +57,7 @@ const EmailActivation = () => {
   }, [EmailValidationReducer.message]);
 
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Oval height="100" width="100" color="#666AF6" ariaLabel="loading" />
-    </div>
+    <Loader />
   );
 };
 

@@ -11,7 +11,8 @@ import { useNavigate } from "react-router-dom";
 import LoginUserDispatcher, {
   resetLoginStoreState,
 } from "../../store/dispatchers/Auth/Login";
-import { GET_USER_TOKEN } from "../../misc/helpers/authTokenManager";
+import { GET_USER_SLUG } from "../../misc/helpers/authTokenManager";
+import { DEFAULT_COLOR } from "../../misc/__colors__";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -26,14 +27,12 @@ const Login = () => {
   const [ seePassword, setSeePassword ] = useState(false);
 
 
-  // useEffect(async ()=>{
-  //   const token = await GET_USER_TOKEN();
-  //   token !== null && token.length > 1 && navigate("/users/dashboard");
-  // }, []);
+  
 
   useEffect(() => {
     const fetchUserToken = async () => {
-      const token =  await GET_USER_TOKEN();
+      const token =  await GET_USER_SLUG();
+      console.log(token);
       token !== null && token.length > 1 && navigate("/users/dashboard");
     }
 
@@ -107,14 +106,14 @@ const Login = () => {
       <div style={{ padding: 4 }}>
         <Link
           to="/users/register"
-          style={{ fontSize: "13px", color: "#666af6" }}
+          style={{ fontSize: "13px", color: DEFAULT_COLOR }}
         >
           I dont have an account?
         </Link>
 
         <Link
           to="/users/forgot-password"
-          style={{ fontSize: "13px", color: "#666af6", float: "right" }}
+          style={{ fontSize: "13px", color: DEFAULT_COLOR, float: "right" }}
         >
           I forgot my password?
         </Link>

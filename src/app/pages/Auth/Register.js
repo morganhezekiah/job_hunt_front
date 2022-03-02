@@ -9,7 +9,8 @@ import { useNavigate } from "react-router-dom";
 import ErrorText from "../../misc/ErrorText";
 import { useDispatch, useSelector } from "react-redux";
 import RegisterUserDispatcher from "../../store/dispatchers/Auth/Register";
-import { GET_USER_TOKEN } from "../../misc/helpers/authTokenManager";
+import { GET_USER_SLUG } from "../../misc/helpers/authTokenManager";
+import { DEFAULT_COLOR } from "../../misc/__colors__";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -29,7 +30,7 @@ const Register = () => {
 
   useEffect(() => {
     async function fetchData(){
-      const token = GET_USER_TOKEN();
+      const token = await GET_USER_SLUG();
       token !== null && token.length > 1 && navigate("/users/dashboard");
     }
     fetchData()
@@ -123,7 +124,7 @@ const Register = () => {
       </form>
 
       <div style={{ padding: 4 }}>
-        <Link to="/" style={{ fontSize: "13px", color: "#666af6" }}>
+        <Link to="/users/login" style={{ fontSize: "13px", color: DEFAULT_COLOR }}>
           I already have an account?
         </Link>
       </div>

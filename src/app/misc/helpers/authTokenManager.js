@@ -1,10 +1,15 @@
 
 
-let USER_TOKEN_KEY ="USER_TOKEN_KEY"
-export const SAVE_USER_TOKEN = token =>{
-    localStorage.setItem(USER_TOKEN_KEY, token);
+let USER_SLUG_KEY ="USER_SLUG_KEY"
+export const SAVE_USER_SLUG = slug =>{
+    console.log(slug);
+    localStorage.setItem(USER_SLUG_KEY, slug);
 }
 
-export const GET_USER_TOKEN = async ()=>{
-    return await localStorage.getItem(USER_TOKEN_KEY)
+export const GET_USER_SLUG = async ()=>{
+    return await localStorage.getItem(USER_SLUG_KEY)
+}
+
+export const DELETE_USER_SLUG = async ()=>{
+    await localStorage.removeItem(USER_SLUG_KEY);
 }

@@ -1,4 +1,4 @@
-import { SAVE_USER_TOKEN } from "../../../misc/helpers/authTokenManager";
+import { SAVE_USER_SLUG } from "../../../misc/helpers/authTokenManager";
 import {
   LOGIN_ERROR,
   LOGIN_SUCCESS,
@@ -26,14 +26,14 @@ const LoginUserDispatcher = (data) => async (dispatch) => {
       }
       return res.json();
     })
-    .then((data) => {
+    .then( async (data) => {
       if (ERROR) {
         dispatch({
           type: LOGIN_ERROR,
           payload: { message: data.message },
         });
       } else {
-        SAVE_USER_TOKEN(data.data.token);
+        await SAVE_USER_SLUG(data.data.user.slug);
         dispatch({
           type: LOGIN_SUCCESS,
           payload: { message: data.message, user: data.data.user },

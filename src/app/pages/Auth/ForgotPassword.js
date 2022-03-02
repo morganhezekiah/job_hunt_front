@@ -11,7 +11,8 @@ import { useNavigate } from "react-router-dom";
 import LoginUserDispatcher, {
   resetLoginStoreState,
 } from "../../store/dispatchers/Auth/Login";
-import { GET_USER_TOKEN } from "../../misc/helpers/authTokenManager";
+import { GET_USER_SLUG } from "../../misc/helpers/authTokenManager";
+import { DEFAULT_COLOR } from "../../misc/__colors__";
 
 const ForgotPassword = () => {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ const ForgotPassword = () => {
 
 
   useEffect(async ()=>{
-    const token = await GET_USER_TOKEN();
+    const token = await GET_USER_SLUG();
     token !== null && token.length > 1 && navigate("/users/dashboard");
   }, []);
 
@@ -82,8 +83,8 @@ const ForgotPassword = () => {
 
       <div style={{ padding: 4 }}>
         <Link
-          to="/"
-          style={{ fontSize: "13px", color: "#666af6" }}
+          to="/users/login"
+          style={{ fontSize: "13px", color: DEFAULT_COLOR }}
         >
           I think I remembered?
         </Link>

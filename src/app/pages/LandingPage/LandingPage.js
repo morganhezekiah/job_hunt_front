@@ -8,8 +8,8 @@ import Footer from "./Footer";
 import Loader from "./Loader";
 import FreeQuote from "./FreeQuote";
 import UseDocumentTitle from "../../hooks/UseDocumentTitle";
-import Portfolio from "./Portfolio";
-import Blogs from "./Blogs";
+// import Portfolio from "./Portfolio";
+// import Blogs from "./Blogs";
 
 const LandingPage = () => {
   UseDocumentTitle("Owerri Job Hunt-Langing Page")
@@ -41,8 +41,8 @@ const LandingPage = () => {
       {/* FREE QUOTE */}
       <FreeQuote />
 
-      <Portfolio />
-      <Blogs />
+      {/* <Portfolio />
+      <Blogs /> */}
 
       {/* CONTACT US */}
       <Contact />

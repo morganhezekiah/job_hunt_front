@@ -5,9 +5,8 @@ const Contact = () => {
         <div className="row">
           <div className="col-lg-6 offset-lg-3">
             <div
-              className="section-heading wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
+              className="section-heading"
+              
             >
               <h6>Contact Us</h6>
               <h4>
@@ -17,9 +16,8 @@ const Contact = () => {
             </div>
           </div>
           <div
-            className="col-lg-12 wow fadeInUp"
-            data-wow-duration="0.5s"
-            data-wow-delay="0.25s"
+            className="col-lg-12"
+            
           >
             <form id="contact" action="" method="post">
               <div className="row">

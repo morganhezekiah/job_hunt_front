@@ -5,9 +5,8 @@ const Services = () => {
         <div className="row">
           <div className="col-lg-12">
             <div
-              className="section-heading  wow fadeInDown"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
+              className="section-heading"
+            
             >
               <h6>Our Services</h6>
               <h4>

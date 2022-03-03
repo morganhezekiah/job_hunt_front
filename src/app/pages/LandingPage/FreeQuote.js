@@ -5,9 +5,8 @@ const FreeQuote = () => {
         <div className="row">
           <div className="col-lg-4 offset-lg-4">
             <div
-              className="section-heading  wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.3s"
+              className="section-heading"
+              
             >
               <h6>Get Your Free Quote</h6>
               <h4>Grow With Us Now</h4>
@@ -15,9 +14,8 @@ const FreeQuote = () => {
             </div>
           </div>
           <div
-            className="col-lg-8 offset-lg-2  wow fadeIn"
-            data-wow-duration="1s"
-            data-wow-delay="0.8s"
+            className="col-lg-8 offset-lg-2"
+          
           >
             <form id="search" action="#" method="GET">
               <div className="row">

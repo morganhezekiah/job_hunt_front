@@ -5,9 +5,8 @@ const Portfolio = () => {
         <div className="row">
           <div className="col-lg-5">
             <div
-              className="section-heading wow fadeInLeft"
-              data-wow-duration="1s"
-              data-wow-delay="0.3s"
+              className="section-heading"
+              
             >
               <h6>Our Portofolio</h6>
               <h4>
@@ -19,9 +18,8 @@ const Portfolio = () => {
         </div>
       </div>
       <div
-        className="container-fluid wow fadeIn"
-        data-wow-duration="1s"
-        data-wow-delay="0.7s"
+        className="container-fluid"
+       
       >
         <div className="row">
           <div className="col-lg-12">

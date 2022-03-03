@@ -4,9 +4,8 @@ const Blogs = () => {
       <div className="container">
         <div className="row">
           <div
-            className="col-lg-4 offset-lg-4  wow fadeInDown"
-            data-wow-duration="1s"
-            data-wow-delay="0.3s"
+            className="col-lg-4 offset-lg-4 "
+            
           >
             <div className="section-heading">
               <h6>Recent News</h6>
@@ -17,9 +16,8 @@ const Blogs = () => {
             </div>
           </div>
           <div
-            className="col-lg-6 show-up wow fadeInUp"
-            data-wow-duration="1s"
-            data-wow-delay="0.3s"
+            className="col-lg-6 show-up"
+            
           >
             <div className="blog-post">
               <div className="thumb">
@@ -51,9 +49,8 @@ const Blogs = () => {
             </div>
           </div>
           <div
-            className="col-lg-6 wow fadeInUp"
-            data-wow-duration="1s"
-            data-wow-delay="0.3s"
+            className="col-lg-6"
+            
           >
             <div className="blog-posts">
               <div className="row">

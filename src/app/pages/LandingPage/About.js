@@ -7,17 +7,15 @@ const About = () => {
             <div className="row">
               <div className="col-lg-6">
                 <div
-                  className="about-left-image  wow "
-                  data-wow-duration="1s"
-                  data-wow-delay="0.5s"
+                  className="about-left-image "
+                
                 >
                   <img src="assets/images/about-dec-v2.png" alt="" />
                 </div>
               </div>
               <div
-                className="col-lg-6 align-self-center  wow "
-                data-wow-duration="1s"
-                data-wow-delay="0.5s"
+                className="col-lg-6 align-self-center   "
+                
               >
                 <div className="about-right-content">
                   <div className="section-heading">
@@ -46,9 +44,8 @@ const About = () => {
                   <div className="row">
                     <div className="col-lg-4 col-sm-4">
                       <div
-                        className="skill-item first-skill-item wow fadeIn"
-                        data-wow-duration="1s"
-                        data-wow-delay="0s"
+                        className="skill-item first-skill-item"
+                        
                       >
                         <div className="progress" data-percentage="90">
                           <span className="progress-left">
@@ -69,9 +66,8 @@ const About = () => {
                     </div>
                     <div className="col-lg-4 col-sm-4">
                       <div
-                        className="skill-item second-skill-item wow fadeIn"
-                        data-wow-duration="1s"
-                        data-wow-delay="0s"
+                        className="skill-item second-skill-item "
+                        
                       >
                         <div className="progress" data-percentage="80">
                           <span className="progress-left">
@@ -92,9 +88,8 @@ const About = () => {
                     </div>
                     <div className="col-lg-4 col-sm-4">
                       <div
-                        className="skill-item third-skill-item wow fadeIn"
-                        data-wow-duration="1s"
-                        data-wow-delay="0s"
+                        className="skill-item third-skill-item "
+                        
                       >
                         <div className="progress" data-percentage="80">
                           <span className="progress-left">

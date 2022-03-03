@@ -7,7 +7,7 @@ const About = () => {
             <div className="row">
               <div className="col-lg-6">
                 <div
-                  className="about-left-image  wow fadeInLeft"
+                  className="about-left-image  wow "
                   data-wow-duration="1s"
                   data-wow-delay="0.5s"
                 >
@@ -15,7 +15,7 @@ const About = () => {
                 </div>
               </div>
               <div
-                className="col-lg-6 align-self-center  wow fadeInRight"
+                className="col-lg-6 align-self-center  wow "
                 data-wow-duration="1s"
                 data-wow-delay="0.5s"
               >

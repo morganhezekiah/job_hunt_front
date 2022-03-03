@@ -1,4 +1,3 @@
-import Portfolio from "./Portfolio";
 import Header from "./Header";
 import About from "./About";
 import Services from "./Services";
@@ -8,15 +7,13 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Loader from "./Loader";
 import FreeQuote from "./FreeQuote";
+import UseDocumentTitle from "../../hooks/UseDocumentTitle";
+import Portfolio from "./Portfolio";
+import Blogs from "./Blogs";
 
 const LandingPage = () => {
-  // const [ numberOfReload, setNumberOfReload ] = useState(0);
-  // useEffect(()=>{
-  //   if()
-  // })
-  // useEffect(()=>{
-  //   window.location.reload();
-  // }, []);
+  UseDocumentTitle("Owerri Job Hunt-Langing Page")
+ 
   return (
     <>
       {/* <!-- ***** Preloader Start ***** --> */}
@@ -44,8 +41,8 @@ const LandingPage = () => {
       {/* FREE QUOTE */}
       <FreeQuote />
 
-      {/* <Portfolio />
-      <Blogs /> */}
+      <Portfolio />
+      <Blogs />
 
       {/* CONTACT US */}
       <Contact />

@@ -9,6 +9,8 @@ import Login from "./app/pages/Auth/Login";
 import Register from "./app/pages/Auth/Register";
 import Logout from "./app/pages/Auth/Logout";
 import LandingPage from "./app/pages/LandingPage/LandingPage";
+import BuisnessPricing from './app/pages/Auth/BuisnessPricing';
+import CandidatePricing from "./app/pages/Auth/CandidatePricing";
 
 
 const App = () => {
@@ -34,6 +36,8 @@ const App = () => {
         <Route path="/users/logout" element={<Logout />} />
         <Route path="/users/forgot-password" element={<ForgotPassword />} />
         <Route path="/users/user-email-activation/:randomString1/:token/:randomString2" element={<EmailActivation />} />
+        <Route path="/users/buisness/pricing" element={<BuisnessPricing/>} />
+        <Route path="/user/candidate/pricing" element={<CandidatePricing/>}/>
       </Routes>
       </Provider>
     </Router>

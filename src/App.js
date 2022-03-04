@@ -37,7 +37,7 @@ const App = () => {
         <Route path="/users/forgot-password" element={<ForgotPassword />} />
         <Route path="/users/user-email-activation/:randomString1/:token/:randomString2" element={<EmailActivation />} />
         <Route path="/users/buisness/pricing" element={<BuisnessPricing/>} />
-        <Route path="/user/candidate/pricing" element={<CandidatePricing/>}/>
+        <Route path="/users/candidate/pricing" element={<CandidatePricing/>}/>
       </Routes>
       </Provider>
     </Router>

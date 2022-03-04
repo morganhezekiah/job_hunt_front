@@ -1,0 +1,9 @@
+.transform-color{
+    animation: change 1s linear
+}
+
+@keyframes change{
+    to{
+        background-color:#009628
+    }
+}

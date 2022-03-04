@@ -1,24 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
+import './styles/Pricing.css'
 
 const PricingComponent = () => {
-    
+    const [hover, setHover] = useState(true)
     return <>
-        <section className="m-20 sm:mx-48 md:mx-6 lg:mx-14 xl:mx-20 basis-1/3">
-          <div className=" rounded-md shadow-md border-lime-600 border-2">
-            <div className="py-6 text-center shadow-md">
+        <section className="m-20 sm:mx-48 md:mx-6 lg:mx-14 xl:mx-20 basis-1/3 cursor-pointer border-first-button scroll-to-section transform-color" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+          <div className=" rounded-md shadow-2xl">
+            <div className="py-6 text-center ">
               <h1 className="text-2xl font-semibold">BASIC</h1>
               <h1 className="py-6 text-xl">#5000</h1>
             </div>
-            <div className="py-6 text-center shadow-md border-current">
+            <div className="py-6 text-center border-current">
               <h2>4 GB Ram</h2>
             </div>
-            <div className="py-6 shadow-md text-center border-current">
+            <div className="py-6 text-center border-current">
               <h2>7/24 Tech Support</h2>
             </div>
-            <div className="py-6 shadow-md text-center">
+            <div className="py-6 text-center">
               <h2>40 GB SSD Cloud Storage</h2>
             </div>
-            <div className="py-6 shadow-md text-center">
+            <div className="py-6 text-center">
               <button className="bg-green-600 px-10 py-2 text-white rounded-full font-semibold shadow-md">Apply</button>
             </div>
           </div>

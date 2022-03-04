@@ -14,7 +14,10 @@ import CandidatePricing from "./app/pages/Auth/CandidatePricing";
 
 
 const App = () => {
+
+  
   return (
+    
     <Router>
       <ToastContainer
         position="top-right"

@@ -32,11 +32,11 @@ const Banner = ()=>{
                       </div>
                       <div className="col-lg-12 flex">
                         <div className="border-first-button scroll-to-section">
-                          <a href="https://bit.ly/owerrijobhunt" target="__blank" className="primary">Register As Student</a>
+                          <a href="/users/register"  className="primary">Register As Student</a>
                         </div>
 
                         <div className="border-first-button scroll-to-section ml-2">
-                          <a  href="https://bit.ly/owerritalenthunt" target="__blank" className="secondary" >Register As Business</a>
+                          <a  href="/companies/register"  className="secondary" >Register As Business</a>
                         </div>
                       </div>
                     </div>

@@ -9,7 +9,7 @@ const Wrapper = ({ title, children }) => {
       <Banner />
       <div className="flex flex-col mt-36   md:flex-row md:mx-0 lg:px-12">
         <section className="bg-white  basis-1/2 border-black p-0">
-          <div className="shadow-lg w-72 mx-auto md:mx-12 lg:mx-auto lg:w-96 lg:mx-0 h-80 lg:h-96  lg:mt-12 ">
+          <div className="shadow-lg w-72 mx-auto md:mx-12 lg:mx-auto lg:w-96 lg:mx-0   lg:mt-12 ">
             <h1
               className="ml-5 font-semibold py-2 lg:py-6"
               style={{ color: DEFAULT_COLOR }}

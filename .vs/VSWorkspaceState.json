@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\public\\assets",
+    "\\public\\assets\\css",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\pages",
+    "\\src\\app\\pages\\Auth",
+    "\\src\\app\\pages\\Auth\\Company",
+    "\\src\\app\\pages\\Auth\\Company\\Dashboard"
+  ],
+  "SelectedNode": "\\src\\app\\store\\dispatchers\\Auth\\Company\\Login.js",
+  "PreviewInSolutionExplorer": false
+}

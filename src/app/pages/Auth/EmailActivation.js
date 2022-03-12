@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Oval } from "react-loader-spinner";
 import { useParams } from "react-router-dom";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import { useDispatch, useSelector } from "react-redux";

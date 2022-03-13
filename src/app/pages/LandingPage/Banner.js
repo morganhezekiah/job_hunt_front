@@ -1,5 +1,5 @@
 import Logo from "../../assets/images/job hunt.png";
-
+import { Link } from "react-router-dom";
 
 
 const Banner = ()=>{
@@ -32,11 +32,11 @@ const Banner = ()=>{
                       </div>
                       <div className="col-lg-12 flex">
                         <div className="border-first-button scroll-to-section">
-                          <a href="/users/register"  className="primary">Register As Student</a>
+                          <Link to="/users/register"  className="primary">Register As Student</Link>
                         </div>
 
                         <div className="border-first-button scroll-to-section ml-2">
-                          <a  href="/companies/register"  className="secondary" >Register As Business</a>
+                          <Link  to="/companies/register"  className="secondary" >Register As Business</Link>
                         </div>
                       </div>
                     </div>

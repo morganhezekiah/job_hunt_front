@@ -57,7 +57,7 @@ const EmailActivation = () => {
   }, [EmailValidationReducer.message]);
 
   return (
-    <p>Loading... </p>
+    <Loader />
   );
 };
 

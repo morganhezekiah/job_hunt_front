@@ -87,6 +87,9 @@ const Register = () => {
       ? setPaswordConfirmError("Password and its confirmation are not same")
       : setPaswordConfirmError("");
 
+
+      console.log(password);
+
     passwordConfirmation.length > 0 && password.length > 0 && email.length > 0 && fullName.length > 0 && dispatch(RegisterUserDispatcher({ email, password, fullName, age: 18 }));
   };
 

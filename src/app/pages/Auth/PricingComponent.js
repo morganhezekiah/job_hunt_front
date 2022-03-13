@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles/Pricing.css";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 import { CompanyPaymentTypes } from "../../misc/__consts__";

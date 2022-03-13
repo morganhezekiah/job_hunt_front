@@ -10,6 +10,7 @@ import GetTopicsReducer from "./Topics/GetTopics";
 import GetUserFromSlug from "./Auth/GetUserFromSlug";
 import AddTopicResourceReducer from "./Topics/AddTopicResource";
 import UpdateCompanyPlan from "./Auth/Company/UpdateCompanyPlan";
+import UpdateUserPlan from "./Auth/UserCompletePayment";
 
 const reducers = combineReducers({
     LoginReducer,
@@ -22,7 +23,8 @@ const reducers = combineReducers({
     RegisterCompanyReducer,
     LoginCompanyReducer,
     GetCompanyFromSlug,
-    UpdateCompanyPlan
+    UpdateCompanyPlan,
+    UpdateUserPlan
 });
 
 

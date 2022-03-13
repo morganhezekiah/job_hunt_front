@@ -34,10 +34,13 @@ const LoginUserDispatcher = (data) => async (dispatch) => {
         });
       } else {
         await SAVE_USER_SLUG(data.data.user.slug);
-        dispatch({
-          type: LOGIN_SUCCESS,
-          payload: { message: data.message, user: data.data.user },
-        });
+        setTimeout(() => {
+          dispatch({
+            type: LOGIN_SUCCESS,
+            payload: { message: data.message, user: data.data.user },
+          });
+        }, 3000);
+        
       }
     })
     .catch((err) => {

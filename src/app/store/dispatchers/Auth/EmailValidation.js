@@ -8,6 +8,7 @@ let ERROR = false;
 const EmailValidationDispatcher = (token) => async (dispatch) => {
   let URL = `${BACKEND_DOMAIN}users/complete-user-email-activation/${token}`;
   dispatch(AppLoadingDispatcher(true));
+  console.log("From the dispatcher");
 
   let params = requestParamsParser("GET");
   await fetch(URL, params)

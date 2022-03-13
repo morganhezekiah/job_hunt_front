@@ -21,8 +21,9 @@ const EmailActivation = () => {
   const EmailValidationReducer = useSelector(state =>state.EmailActivationReducer);
 
 
-  useEffect(() => {
-    token && dispatch(EmailValidationDispatcher(token));
+  useEffect(async () => {
+    console.log("From the app")
+    token && await dispatch(EmailValidationDispatcher(token));
   }, []);
 
   useEffect(() => {

@@ -11,6 +11,9 @@ import GetUserFromSlug from "./Auth/GetUserFromSlug";
 import AddTopicResourceReducer from "./Topics/AddTopicResource";
 import UpdateCompanyPlan from "./Auth/Company/UpdateCompanyPlan";
 import UpdateUserPlan from "./Auth/UserCompletePayment";
+import ResendUserAccountActivation from "./Auth/ResendUserAccountActivationEmail";
+
+
 
 const reducers = combineReducers({
     LoginReducer,
@@ -24,7 +27,8 @@ const reducers = combineReducers({
     LoginCompanyReducer,
     GetCompanyFromSlug,
     UpdateCompanyPlan,
-    UpdateUserPlan
+    UpdateUserPlan,
+    ResendUserAccountActivation
 });
 
 

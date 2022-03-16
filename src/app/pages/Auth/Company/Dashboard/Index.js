@@ -27,7 +27,6 @@ const Dashboard = () => {
         if (companySlug !== null || companySlug === "" || companySlug === "undefined") {
             dispatch(GetCompanyFromSlugDispatcher(companySlug));
         } else {
-            console.log("Navigat in Frontend");
             navigate("/companies/login");
         }
     }, []);
@@ -55,7 +54,7 @@ const Dashboard = () => {
 
 
     return (
-        AppLoadingData.loading ? <Loader /> : GetCompanyFromSlug.isActive ? <p>Dashboard</p> : <BusinessPricing />
+        AppLoadingData.loading ? <Loader /> : GetCompanyFromSlug.isActive ? <div style="display:flex; justify-content:center;"><h3>Thanks for Completing your process, will shall contact you. :)</h3></div> : <BusinessPricing />
     )
 };
 

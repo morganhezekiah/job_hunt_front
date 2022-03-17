@@ -1,4 +1,7 @@
-import face1 from '../../assets/images/img/team/2.jpg'
+import man2 from '../../assets/images/man2.png';
+import woman1 from '../../assets/images/woman3.jpeg';
+import woman2 from '../../assets/images/woman2.jpeg';
+
 const Services = () => {
   return (
     <div id="services" className="services section">
@@ -22,6 +25,7 @@ const Services = () => {
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="menu">
+                      <h1 className="text-2xl">Digital Skill Traning</h1>
                       <div className="first-thumb active">
                         <div className="thumb">
                           <span className="icon">
@@ -30,43 +34,10 @@ const Services = () => {
                               alt=""
                             />
                           </span>
-                          Apartments
+                          Ms word/Google Docs
                         </div>
                       </div>
-                      <div>
-                        <div className="thumb">
-                          <span className="icon">
-                            <img
-                              src="assets/images/service-icon-02.png"
-                              alt=""
-                            />
-                          </span>
-                          Food &amp; Life
-                        </div>
-                      </div>
-                      <div>
-                        <div className="thumb">
-                          <span className="icon">
-                            <img
-                              src="assets/images/service-icon-03.png"
-                              alt=""
-                            />
-                          </span>
-                          Cars
-                        </div>
-                      </div>
-                      <div>
-                        <div className="thumb">
-                          <span className="icon">
-                            <img
-                              src="assets/images/service-icon-04.png"
-                              alt=""
-                            />
-                          </span>
-                          Shopping
-                        </div>
-                      </div>
-                      <div className="last-thumb">
+                      <div className="first-thumb active">
                         <div className="thumb">
                           <span className="icon">
                             <img
@@ -74,15 +45,125 @@ const Services = () => {
                               alt=""
                             />
                           </span>
-                          Traveling
+                          Ms Excel/Google Sheets
+                        </div>
+                      </div>
+                      <div className="first-thumb active">
+                        <div className="thumb">
+                          <span className="icon">
+                            <img
+                              src="assets/images/service-icon-01.png"
+                              alt=""
+                            />
+                          </span>
+                          Ms Access
+                        </div>
+                      </div>
+                      <div className="first-thumb active">
+                        <div className="thumb">
+                          <span className="icon">
+                            <img
+                              src="assets/images/service-icon-01.png"
+                              alt=""
+                            />
+                          </span>
+                          Graphic Design/Branding
+                        </div>
+                      </div>
+                      <div className="first-thumb active">
+                        <div className="thumb">
+                          <span className="icon">
+                            <img
+                              src="assets/images/service-icon-02.png"
+                              alt=""
+                            />
+                          </span>
+                          Content Writing
+                        </div>
+                      </div>
+                      <div className="first-thumb active">
+                        <div className="thumb">
+                          <span className="icon">
+                            <img
+                              src="assets/images/service-icon-03.png"
+                              alt=""
+                            />
+                          </span>
+                          Blogging
+                        </div>
+                      </div>
+                      <div className="first-thumb active">
+                        <div className="thumb">
+                          <span className="icon">
+                            <img
+                              src="assets/images/service-icon-04.png"
+                              alt=""
+                            />
+                          </span>
+                          Digital File Management
+                        </div>
+                      </div>
+                      <div className="first-thumb active">
+                        <div className="thumb">
+                          <span className="icon">
+                            <img
+                              src="assets/images/service-icon-04.png"
+                              alt=""
+                            />
+                          </span>
+                          Digital Office Management
+                        </div>
+                      </div>
+                      <div className="first-thumb active">
+                        <div className="thumb">
+                          <span className="icon">
+                            <img
+                              src="assets/images/service-icon-04.png"
+                              alt=""
+                            />
+                          </span>
+                          Mobile App Development
+                        </div>
+                      </div>
+                      <div className="first-thumb active">
+                        <div className="thumb">
+                          <span className="icon">
+                            <img
+                              src="assets/images/service-icon-04.png"
+                              alt=""
+                            />
+                          </span>
+                          Web Development
+                        </div>
+                      </div>
+                      <div className="first-thumb active">
+                        <div className="thumb">
+                          <span className="icon">
+                            <img
+                              src="assets/images/service-icon-04.png"
+                              alt=""
+                            />
+                          </span>
+                          Digital Markerting
+                        </div>
+                      </div>
+                      <div className="first-thumb active">
+                        <div className="thumb">
+                          <span className="icon">
+                            <img
+                              src="assets/images/service-icon-04.png"
+                              alt=""
+                            />
+                          </span>
+                          Businessess Branding
                         </div>
                       </div>
                     </div>
                   </div>
-                  <h1 className="text-center text-xl font-semibold">Testimonials</h1>
+                  <h1 className="text-center text-3xl font-bold">Testimonials</h1>
                   <section id="testimonials" class="flex flex-col lg:flex-row">
                   <figure class=" bg-slate-100 rounded-xl p-8 mt-10  dark:bg-slate-800 mx-4">
-                    <img class="w-24 h-24  rounded-full mx-auto" src={face1} alt="" width="384" height="512"/>
+                    <img class="w-24 h-24  rounded-full mx-auto" src={man2} alt="" width="384" height="512"/>
                     <div class="pt-6  text-center  space-y-4">
                       <blockquote>
                         <p class="text-lg font-medium">
@@ -102,7 +183,7 @@ const Services = () => {
                     </div>
                     </figure>
                     <figure class=" bg-slate-100 rounded-xl p-8 mt-10  dark:bg-slate-800 mx-4">
-                    <img class="w-24 h-24  rounded-full mx-auto" src={face1} alt="" width="384" height="512"/>
+                    <img class="w-24 h-24  rounded-full mx-auto" src={woman1} alt="" width="384" height="512"/>
                     <div class="pt-6  text-center  space-y-4">
                       <blockquote>
                         <p class="text-lg font-medium">
@@ -122,7 +203,7 @@ const Services = () => {
                     </div>
                     </figure>
                     <figure class=" bg-slate-100 rounded-xl p-8 mt-10 dark:bg-slate-800 mx-4">
-                    <img class="w-24 h-24  rounded-full mx-auto" src={face1} alt="" width="384" height="512"/>
+                    <img class="w-24 h-24  rounded-full mx-auto" src={woman2} alt="" width="384" height="512"/>
                     <div class="pt-6  text-center  space-y-4">
                       <blockquote>
                         <p class="text-lg font-medium">

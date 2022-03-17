@@ -16,7 +16,7 @@ const Banner = ()=>{
                     <div className="basis-1/2 ">
                       <div className="mx-4 lg:mx-8">
                         <h2 className="text-2xl text-center md:text-4xl font-bold my-6">Over 2000 local and international jobs open for grabs!</h2>
-                        <p className="text-lg font-normal my-4 hidden md:block text-black">
+                        <p className="text-lg font-normal my-4 hidden md:block text-black text-center">
                         Owerri Job Hunt is the biggest and largest talent pull targeting job providing platforms for job seekers. This Job Hunt will allow us to onboard more candidates, provide businesses with more equipped human resources, reduce the cost of hiring for so many businesses, and help youths create better means of livelihood for themselves
                         </p>
                       </div>

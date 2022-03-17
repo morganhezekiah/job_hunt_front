@@ -16,7 +16,7 @@ const Input = ({
                 rows="5"
                 onChange={onChange}
                 className="w-full outline-none border-2  mx-5 my-2"
-                // style={{ width: "100%", flex: "3", backgroundColor: "#E8EEF3" }}
+                style={{backgroundColor: "#E8EEF3" }}
             />
         </div>
     ) : (
@@ -25,11 +25,6 @@ const Input = ({
             {secured ? (
                 <div
                     className="mx-5 my-2 flex"
-                    // style={{
-                    //     display: "flex",
-                    //     alignItems: "center",
-                    //     backgroundColor: "#E8EEF3",
-                    // }}
                 >
                     <input
                         style={{  backgroundColor: "#E8EEF3" }}

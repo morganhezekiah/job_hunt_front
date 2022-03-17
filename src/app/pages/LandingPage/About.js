@@ -1,3 +1,4 @@
+import man1 from '../../assets/images/man1.jpeg';
 const About = () => {
   return (
     <div id="about" className="about section">
@@ -10,7 +11,7 @@ const About = () => {
                   className="about-left-image "
                 
                 >
-                  <img src="assets/images/about-dec-v2.png" alt="" />
+                  <img src={man1} alt="" />
                 </div>
               </div>
               <div

@@ -20,7 +20,7 @@ const Wrapper = ({ title, children }) => {
           </div>
         </section>
         <section className="hidden md:block basis-1/2 ">
-          <div className="lg:mt-14 xl:mt-0">
+          <div className="mt-24">
             <img src={virtual} alt="tex" className="" />
           </div>
         </section>

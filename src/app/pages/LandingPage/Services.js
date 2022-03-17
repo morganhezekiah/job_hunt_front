@@ -1,3 +1,4 @@
+import face1 from '../../assets/images/img/team/2.jpg'
 const Services = () => {
   return (
     <div id="services" className="services section">
@@ -78,295 +79,69 @@ const Services = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-12">
-                    <ul className="nacc">
-                      <li className="active">
-                        <div>
-                          <div className="thumb">
-                            <div className="row">
-                              <div className="col-lg-6 align-self-center">
-                                <div className="left-text">
-                                  <h4>SEO Analysis &amp; Daily Reports</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div className="ticks-list">
-                                    <span>
-                                      <i className="fa fa-check"></i> Optimized
-                                      Template
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> Data Info
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> SEO
-                                      Analysis
-                                    </span>
-                                    <span>
-                                      <i className="fa fa-check"></i> Data Info
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> SEO
-                                      Analysis
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> Optimized
-                                      Template
-                                    </span>
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="col-lg-6 align-self-center">
-                                <div className="right-image">
-                                  <img
-                                    src="assets/images/services-image.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                  <h1 className="text-center text-xl font-semibold">Testimonials</h1>
+                  <section id="testimonials" class="flex flex-col lg:flex-row">
+                  <figure class=" bg-slate-100 rounded-xl p-8 mt-10  dark:bg-slate-800 mx-4">
+                    <img class="w-24 h-24  rounded-full mx-auto" src={face1} alt="" width="384" height="512"/>
+                    <div class="pt-6  text-center  space-y-4">
+                      <blockquote>
+                        <p class="text-lg font-medium">
+                          “Tailwind CSS is the only framework that I've seen scale
+                          on large teams. It’s easy to customize, adapts to any design,
+                          and the build size is tiny.”
+                        </p>
+                      </blockquote>
+                      <figcaption class="font-medium">
+                        <div class="text-sky-500 dark:text-sky-400">
+                          Sarah Dayan
                         </div>
-                      </li>
-                      <li>
-                        <div>
-                          <div className="thumb">
-                            <div className="row">
-                              <div className="col-lg-6 align-self-center">
-                                <div className="left-text">
-                                  <h4>Healthy Food &amp; Life</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div className="ticks-list">
-                                    <span>
-                                      <i className="fa fa-check"></i> Optimized
-                                      Template
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> Data Info
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> SEO
-                                      Analysis
-                                    </span>
-                                    <span>
-                                      <i className="fa fa-check"></i> Data Info
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> SEO
-                                      Analysis
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> Optimized
-                                      Template
-                                    </span>
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="col-lg-6 align-self-center">
-                                <div className="right-image">
-                                  <img
-                                    src="assets/images/services-image-02.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                        <div class="text-slate-700 dark:text-slate-500">
+                          Staff Engineer, Algolia
                         </div>
-                      </li>
-                      <li>
-                        <div>
-                          <div className="thumb">
-                            <div className="row">
-                              <div className="col-lg-6 align-self-center">
-                                <div className="left-text">
-                                  <h4>Car Re-search &amp; Transport</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div className="ticks-list">
-                                    <span>
-                                      <i className="fa fa-check"></i> Optimized
-                                      Template
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> Data Info
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> SEO
-                                      Analysis
-                                    </span>
-                                    <span>
-                                      <i className="fa fa-check"></i> Data Info
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> SEO
-                                      Analysis
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> Optimized
-                                      Template
-                                    </span>
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="col-lg-6 align-self-center">
-                                <div className="right-image">
-                                  <img
-                                    src="assets/images/services-image-03.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                      </figcaption>
+                    </div>
+                    </figure>
+                    <figure class=" bg-slate-100 rounded-xl p-8 mt-10  dark:bg-slate-800 mx-4">
+                    <img class="w-24 h-24  rounded-full mx-auto" src={face1} alt="" width="384" height="512"/>
+                    <div class="pt-6  text-center  space-y-4">
+                      <blockquote>
+                        <p class="text-lg font-medium">
+                          “Tailwind CSS is the only framework that I've seen scale
+                          on large teams. It’s easy to customize, adapts to any design,
+                          and the build size is tiny.”
+                        </p>
+                      </blockquote>
+                      <figcaption class="font-medium">
+                        <div class="text-sky-500 dark:text-sky-400">
+                          Sarah Dayan
                         </div>
-                      </li>
-                      <li>
-                        <div>
-                          <div className="thumb">
-                            <div className="row">
-                              <div className="col-lg-6 align-self-center">
-                                <div className="left-text">
-                                  <h4>Online Shopping &amp; Tracking ID</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div className="ticks-list">
-                                    <span>
-                                      <i className="fa fa-check"></i> Optimized
-                                      Template
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> Data Info
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> SEO
-                                      Analysis
-                                    </span>
-                                    <span>
-                                      <i className="fa fa-check"></i> Data Info
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> SEO
-                                      Analysis
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> Optimized
-                                      Template
-                                    </span>
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="col-lg-6 align-self-center">
-                                <div className="right-image">
-                                  <img
-                                    src="assets/images/services-image-04.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                        <div class="text-slate-700 dark:text-slate-500">
+                          Staff Engineer, Algolia
                         </div>
-                      </li>
-                      <li>
-                        <div>
-                          <div className="thumb">
-                            <div className="row">
-                              <div className="col-lg-6 align-self-center">
-                                <div className="left-text">
-                                  <h4>Enjoy &amp; Travel</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div className="ticks-list">
-                                    <span>
-                                      <i className="fa fa-check"></i> Optimized
-                                      Template
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> Data Info
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> SEO
-                                      Analysis
-                                    </span>
-                                    <span>
-                                      <i className="fa fa-check"></i> Data Info
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> SEO
-                                      Analysis
-                                    </span>{" "}
-                                    <span>
-                                      <i className="fa fa-check"></i> Optimized
-                                      Template
-                                    </span>
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="col-lg-6 align-self-center">
-                                <div className="right-image">
-                                  <img
-                                    src="assets/images/services-image.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                      </figcaption>
+                    </div>
+                    </figure>
+                    <figure class=" bg-slate-100 rounded-xl p-8 mt-10 dark:bg-slate-800 mx-4">
+                    <img class="w-24 h-24  rounded-full mx-auto" src={face1} alt="" width="384" height="512"/>
+                    <div class="pt-6  text-center  space-y-4">
+                      <blockquote>
+                        <p class="text-lg font-medium">
+                          “Tailwind CSS is the only framework that I've seen scale
+                          on large teams. It’s easy to customize, adapts to any design,
+                          and the build size is tiny.”
+                        </p>
+                      </blockquote>
+                      <figcaption class="font-medium">
+                        <div class="text-sky-500 dark:text-sky-400">
+                          Sarah Dayan
                         </div>
-                      </li>
-                    </ul>
-                  </div>
+                        <div class="text-slate-700 dark:text-slate-500">
+                          Staff Engineer, Algolia
+                        </div>
+                      </figcaption>
+                    </div>
+                    </figure>
+                  </section>
                 </div>
               </div>
             </div>

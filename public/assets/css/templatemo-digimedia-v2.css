@@ -360,8 +360,10 @@ header
 }
 
 .header-area .main-nav {
-  min-height: 80px;
+  /* min-height: 80px; */
+  height:75px !important;
   background: transparent;
+  z-index:100000 !important;
 }
 
 .header-area .main-nav .logo {

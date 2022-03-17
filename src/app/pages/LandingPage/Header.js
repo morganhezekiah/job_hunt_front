@@ -31,7 +31,7 @@ const Header = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <nav className="flex main-nav ">
+            <nav className="flex main-nav " style={{ height:"60px !important"}}>
               {/* <!-- ***** Logo Start ***** --> */}
               <a href="index.html" className="logo">
                 <Banner />

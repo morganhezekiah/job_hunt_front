@@ -6,7 +6,7 @@ import TopNav from "./TopNav";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Loader from "./Loader";
-import FreeQuote from "./FreeQuote";
+import Sponsorship from "./Sponsorship";
 import UseDocumentTitle from "../../hooks/UseDocumentTitle";
 // import Portfolio from "./Portfolio";
 // import Blogs from "./Blogs";
@@ -39,7 +39,7 @@ const LandingPage = () => {
       <Services />
 
       {/* FREE QUOTE */}
-      <FreeQuote />
+      <Sponsorship />
 
       {/* <Portfolio />
       <Blogs /> */}

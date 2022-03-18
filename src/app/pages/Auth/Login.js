@@ -13,7 +13,6 @@ import LoginUserDispatcher, {
 } from "../../store/dispatchers/Auth/Login";
 import { GET_USER_SLUG } from "../../misc/helpers/authTokenManager";
 import { DEFAULT_COLOR } from "../../misc/__colors__";
-import { Oval, Bars } from "react-loader-spinner";
 import Loader from "../../misc/Loader";
 
 

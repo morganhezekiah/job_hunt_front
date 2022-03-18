@@ -13,6 +13,8 @@ import LoginUserDispatcher, {
 } from "../../store/dispatchers/Auth/Login";
 import { GET_USER_SLUG } from "../../misc/helpers/authTokenManager";
 import { DEFAULT_COLOR } from "../../misc/__colors__";
+import Loader from "../../misc/Loader";
+
 
 const Login = () => {
   const navigate = useNavigate();
@@ -99,7 +101,7 @@ const Login = () => {
         <Button
           disabled={AppLoading}
           onClick={handleUserLoginRequest}
-          title="Login"
+          title={ AppLoading  ? <Loader small width="1rem" height="1rem" color="#fff" />: "Register"}
         />
       </form>
 

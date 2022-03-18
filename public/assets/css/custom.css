@@ -1,3 +1,19 @@
 .react-tel-input {
     width: 100% !important;
 }
+.notification{
+    width:100%;
+    padding: 10px;
+    color: #5f6162;
+    font-size: 16px;
+    background: hsl(0, 0%, 91%);
+}
+.close-notification{
+    cursor: pointer;
+    font-size: 27px;
+    position: absolute;
+    top: -12px;
+    right: 0px;
+    transform: rotate(45deg);
+    color: white;
+}

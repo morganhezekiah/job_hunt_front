@@ -16,7 +16,7 @@ const Wrapper = ({ title, children }) => {
             >
               {title}
             </h1>
-            {children}
+            <div style={{ paddingBottom:"10px"}}>{children}</div>
           </div>
         </section>
         <section className="hidden md:block basis-1/2 ">

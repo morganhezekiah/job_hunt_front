@@ -12,7 +12,6 @@ import RegisterUserDispatcher from "../../store/dispatchers/Auth/Register";
 import { GET_USER_SLUG } from "../../misc/helpers/authTokenManager";
 import { DEFAULT_COLOR } from "../../misc/__colors__";
 import UserResendActivationEmail from "../../store/dispatchers/Auth/UserResendAccountActivationEmail";
-import { Oval, Bars } from "react-loader-spinner";
 import Loader from "../../misc/Loader";
 
  

@@ -51,7 +51,9 @@ const EmailActivation = () => {
 
       if (!EmailValidationReducer.error) {
         dispatch(resetEmailActivationStoreState());
-        navigate("/users/login");
+        console.log(EmailValidationReducer)
+        EmailValidationReducer.user.company ? navigate("/companies/login"): navigate("/users/login");
+        
       }
     }
   }, [EmailValidationReducer.message]);

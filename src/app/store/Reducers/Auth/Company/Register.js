@@ -3,7 +3,7 @@ import { REGISTER_COMPANY_ERROR, REGISTER_COMPANY_SUCCESS } from "../../../Actio
 
 
 const initialState = {
-    user:[],
+    company:[],
     error:false,
     success:false,
     message:"",
@@ -15,7 +15,7 @@ const RegisterReducer = (state=initialState, action)=>{
         case REGISTER_COMPANY_ERROR:
             return {
                 ...state,
-                user:[],
+                company:[],
                 error:true,
                 success:false,
                 message:action.payload.message
@@ -23,7 +23,7 @@ const RegisterReducer = (state=initialState, action)=>{
         case REGISTER_COMPANY_SUCCESS:
             return {
                 ...state,
-                user:action.payload.user,
+                company:action.payload.company,
                 message:action.payload.message,
                 error:false,
                 success:true

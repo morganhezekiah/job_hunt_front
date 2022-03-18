@@ -30,7 +30,7 @@ const EmailValidationDispatcher = (token) => async (dispatch) => {
       } else {
         dispatch({
           type: USER_EMAIL_VALIDATION_SUCCESS,
-          payload: { message: data.message},
+          payload: { message: data.message, user: data.data.user},
         });
       }
     })

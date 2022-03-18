@@ -5,8 +5,10 @@ import { USER_EMAIL_RESEND_ERROR, USER_EMAIL_RESEND_SUCCESS, USER_EMAIL_RESEND_R
 
 let ERROR = false;
 
-const UserReendActivationEmail = () => async ( dispatch, getState ) => {
-  let URL = `${BACKEND_DOMAIN}users/resendUserRegterationEmail/${getState().RegisterReducer.user.id}`;
+const UserReendActivationEmail = (company=false) => async ( dispatch, getState ) => {
+  console.log(getState().RegisterCompanyReducer);
+  console.log(getState().RegisterCompanyReducer.company.registered_by.id);
+  let URL = `${BACKEND_DOMAIN}users/resendUserRegterationEmail/${company? getState().RegisterCompanyReducer.company.registered_by.id:getState().companyRegisterReducer.user.id}`;
   dispatch(AppLoadingDispatcher(true));
 
   let params = requestParamsParser("GET");

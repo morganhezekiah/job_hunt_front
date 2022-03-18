@@ -13,6 +13,7 @@ import LoginCompanyDispatcher, {
 } from "../../../store/dispatchers/Auth/Company/Login";
 import { GET_USER_SLUG } from "../../../misc/helpers/authTokenManager";
 import { DEFAULT_COLOR } from "../../../misc/__colors__";
+import Loader from "../../../misc/Loader";
 
 
 const Login = () => {
@@ -106,7 +107,7 @@ const Login = () => {
                 <Button
                     disabled={AppLoading}
                     onClick={handleCompanyLogin}
-                    title="Login"
+                    title={ AppLoading  ? <Loader small width="1rem" height="1rem" color="#fff" />: "Login"}
                 />
             </form>
 

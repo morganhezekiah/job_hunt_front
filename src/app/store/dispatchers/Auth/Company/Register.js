@@ -30,7 +30,7 @@ const RegisterCompanyDispatcher = (data) => async (dispatch) => {
       } else {
         dispatch({
           type: REGISTER_COMPANY_SUCCESS,
-          payload: { message: data.message, user: data.data.user },
+          payload: { message: data.message, company: data.data.company },
         });
       }
     })

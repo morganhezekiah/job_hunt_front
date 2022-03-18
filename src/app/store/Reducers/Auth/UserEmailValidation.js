@@ -3,6 +3,7 @@ import { USER_EMAIL_VALIDATION_ERROR, USER_EMAIL_VALIDATION_SUCCESS, USER_EMAIL_
 const initialState = {
     message:"",
     error:false,
+    user:{},
 
 }
 
@@ -13,19 +14,22 @@ const EmailActivation = (state= initialState, action)=>{
             return {
                 ...state,
                 message:action.payload.message,
-                error:true
+                error:true,
+                user:{},
             }
         case USER_EMAIL_VALIDATION_SUCCESS:
             return {
                 ...state,
                 message:action.payload.message,
-                error:false
+                error:false,
+                user:action.payload.user
             }
         case USER_EMAIL_VALIDATION_RESET:
             return {
                 ...state,
                 message:'',
-                error:false
+                error:false,
+                user:{}
             }
         default: return state;
     }

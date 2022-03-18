@@ -14,6 +14,7 @@ import Logout from "./app/pages/Auth/Logout";
 import LandingPage from "./app/pages/LandingPage/LandingPage";
 import BuisnessPricing from './app/pages/Auth/BuisnessPricing';
 import CandidatePricing from "./app/pages/Auth/CandidatePricing";
+import "./app/css/app.css";
 
 
 const App = () => {

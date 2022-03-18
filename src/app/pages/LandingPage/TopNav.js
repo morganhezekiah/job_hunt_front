@@ -34,11 +34,6 @@ const TopNav = () => {
                   <i className="fa fa-twitter"></i>
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <i className="fa fa-dribbble"></i>
-                </a>
-              </li>
             </ul>
           </div>
         </div>

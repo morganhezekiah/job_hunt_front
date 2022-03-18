@@ -21,7 +21,7 @@ const Header = () => {
     };
   return (
     <header
-      className="header-area header-sticky"
+      className="header-area header-sticky static"
       
     >
       <div className="container">

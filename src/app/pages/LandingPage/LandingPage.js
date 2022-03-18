@@ -5,7 +5,6 @@ import Banner from "./Banner";
 import TopNav from "./TopNav";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import Loader from "./Loader";
 import Sponsorship from "./Sponsorship";
 import UseDocumentTitle from "../../hooks/UseDocumentTitle";
 // import Portfolio from "./Portfolio";
@@ -17,7 +16,7 @@ const LandingPage = () => {
   return (
     <>
       {/* <!-- ***** Preloader Start ***** --> */}
-      <Loader />
+      {/* <Loader /> */}
       {/* <!-- ***** Preloader End ***** -->
 
   <!-- Pre-header Starts --> */}

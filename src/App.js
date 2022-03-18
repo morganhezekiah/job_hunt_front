@@ -14,15 +14,19 @@ import Logout from "./app/pages/Auth/Logout";
 import LandingPage from "./app/pages/LandingPage/LandingPage";
 import BuisnessPricing from './app/pages/Auth/BuisnessPricing';
 import CandidatePricing from "./app/pages/Auth/CandidatePricing";
-import "./app/css/app.css";
+import React, { useEffect, useState } from "react";
+import Loader from "./app/pages/LandingPage/Loader";
 
 
 const App = () => {
-
-  
+  const [isLoading, setisLoading] = useState(true)
+   useEffect(() => {
+    setTimeout(() => {
+      setisLoading(false)
+    },2500)
+   },[])
   return (
-    
-    <Router>
+    <>{isLoading === true ? <Loader/>:<Router>
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -50,7 +54,8 @@ const App = () => {
         <Route path="/users/candidate/pricing" element={<CandidatePricing/>}/>
       </Routes>
       </Provider>
-    </Router>
+    </Router>} </>
+    
   )
   
 }

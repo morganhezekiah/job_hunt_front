@@ -167,18 +167,17 @@ const Services = () => {
                     <div class="pt-6  text-center  space-y-4">
                       <blockquote>
                         <p class="text-lg font-medium">
-                          “Tailwind CSS is the only framework that I've seen scale
-                          on large teams. It’s easy to customize, adapts to any design,
-                          and the build size is tiny.”
+                        I'm glad to have been a participant During the Grassroot Digital Skill training, that took place at Adazi Nnukwu ICT Center Anaocha, Anambra state.
+                        Upskill team has been very intentional in transferring knowledge and the classes have been intensive. I learnt a lot on digital marketing and now I can proudly state that I have began earning from this digital Skill.
                         </p>
                       </blockquote>
                       <figcaption class="font-medium">
                         <div class="text-sky-500 dark:text-sky-400">
                           Sarah Dayan
                         </div>
-                        <div class="text-slate-700 dark:text-slate-500">
+                        {/* <div class="text-slate-700 dark:text-slate-500">
                           Staff Engineer, Algolia
-                        </div>
+                        </div> */}
                       </figcaption>
                     </div>
                     </figure>
@@ -187,18 +186,16 @@ const Services = () => {
                     <div class="pt-6  text-center  space-y-4">
                       <blockquote>
                         <p class="text-lg font-medium">
-                          “Tailwind CSS is the only framework that I've seen scale
-                          on large teams. It’s easy to customize, adapts to any design,
-                          and the build size is tiny.”
+                        Upskill Network has a team of dedicated instructors, trainers and a very organized team. Enrolling into their program have been one of the best decisions I've made. After interning, I have been able to secure jobs and work from home. I'm glad to have found this tech institute.
                         </p>
                       </blockquote>
                       <figcaption class="font-medium">
                         <div class="text-sky-500 dark:text-sky-400">
-                          Sarah Dayan
+                          Chineye Ann
                         </div>
-                        <div class="text-slate-700 dark:text-slate-500">
+                        {/* <div class="text-slate-700 dark:text-slate-500">
                           Staff Engineer, Algolia
-                        </div>
+                        </div> */}
                       </figcaption>
                     </div>
                     </figure>
@@ -207,18 +204,17 @@ const Services = () => {
                     <div class="pt-6  text-center  space-y-4">
                       <blockquote>
                         <p class="text-lg font-medium">
-                          “Tailwind CSS is the only framework that I've seen scale
-                          on large teams. It’s easy to customize, adapts to any design,
-                          and the build size is tiny.”
+                        I began my tech journey 2017, however, I made little or nothing out of the knowledge I had. A radio jingle performed the magic and I got connected with the biggest vocational Technology Institution in
+                        the south east region of Nigeria, Upskill Network. And today, I enjoy profits from this one in a life time connection.
                         </p>
                       </blockquote>
                       <figcaption class="font-medium">
                         <div class="text-sky-500 dark:text-sky-400">
-                          Sarah Dayan
+                          Queen Davidson
                         </div>
-                        <div class="text-slate-700 dark:text-slate-500">
+                        {/* <div class="text-slate-700 dark:text-slate-500">
                           Staff Engineer, Algolia
-                        </div>
+                        </div> */}
                       </figcaption>
                     </div>
                     </figure>

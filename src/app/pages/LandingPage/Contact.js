@@ -97,7 +97,7 @@ const Contact = () => {
                           <textarea
                             name="message"
                             type="text"
-                            className="form-control"
+                            className="form-control placeholder:font-bold"
                             id="message"
                             placeholder="Message"
                             required=""

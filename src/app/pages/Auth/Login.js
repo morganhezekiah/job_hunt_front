@@ -101,7 +101,7 @@ const Login = () => {
         <Button
           disabled={AppLoading}
           onClick={handleUserLoginRequest}
-          title={ AppLoading  ? <Loader small width="1rem" height="1rem" color="#fff" />: "Register"}
+          title={ AppLoading  ? <Loader small width="1rem" height="1rem" color="#fff" />: "Login"}
         />
       </form>
 

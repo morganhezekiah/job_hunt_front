@@ -16,6 +16,7 @@ import BuisnessPricing from './app/pages/Auth/BuisnessPricing';
 import CandidatePricing from "./app/pages/Auth/CandidatePricing";
 import React, { useEffect, useState } from "react";
 import Loader from "./app/pages/LandingPage/Loader";
+import "./app/css/app.css";
 
 
 const App = () => {

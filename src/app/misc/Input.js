@@ -34,14 +34,14 @@ const Input = ({
                         className=" p-2  rounded-sm text-black outline-none bg-yellow-300 w-full"
                     />
                     <div
-                        className="pr-2"
+                        className="pr-2 pt-2"
                         style={{ backgroundColor: "#E8EEF3" }}
                         onClick={() => setSecuredState(!securedState)}
                     >
                         {securedState ? (
                             // <i class="fa-solid fa-eye"></i>
                             <i
-                                className="fas fa-eye-slash  cursor-pointer"
+                                className="fas fa-eye-slash  cursor-pointer "
                                 style={{ color: "#666AF6" }}
                             ></i>
                         ) : (

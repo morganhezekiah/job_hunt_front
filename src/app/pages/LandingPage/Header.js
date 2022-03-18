@@ -1,23 +1,19 @@
 import React , {useState} from 'react'
 import Banner from "../../misc/Banner";
-import { Link } from "react-router-dom";
 import open from '../../assets/images/menu.png'
 import close from '../../assets/images/close.png'
 import { Menu, Button } from 'antd';
 import {
-  AppstoreOutlined,
   MenuUnfoldOutlined,
   MenuFoldOutlined,
   PieChartOutlined,
   DesktopOutlined,
   ContainerOutlined,
-  MailOutlined,
 } from '@ant-design/icons';
 
 const Header = () => {
   const [navModal, setNavModal] = useState(false)
   const [collapsed, setCollapsed] = useState()
-  const { SubMenu } = Menu;
 
 
     const toggleCollapsed = () => {

@@ -17,7 +17,7 @@ const LandingPage = () => {
   return (
     <>
       {/* <!-- ***** Preloader Start ***** --> */}
-      <Loader />
+      {/* <Loader /> */}
       {/* <!-- ***** Preloader End ***** -->
 
   <!-- Pre-header Starts --> */}

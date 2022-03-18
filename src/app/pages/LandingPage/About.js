@@ -1,3 +1,4 @@
+import man1 from '../../assets/images/man1.jpeg';
 const About = () => {
   return (
     <div id="about" className="about section">
@@ -10,7 +11,7 @@ const About = () => {
                   className="about-left-image "
                 
                 >
-                  <img src="assets/images/about-dec-v2.png" alt="" />
+                  <img src={man1} alt="" />
                 </div>
               </div>
               <div
@@ -21,25 +22,13 @@ const About = () => {
                   <div className="section-heading">
                     <h6>About Us</h6>
                     <h4>
-                      What Is<em> OwerriJobHunt</em>
+                      This project is brought to you by Upskill Network
                     </h4>
                     <div className="line-dec"></div>
                   </div>
-                  <p>
-                    We hope this DigiMedia template is useful for your work. You
-                    can use this template for any purpose. You may{" "}
-                    <a
-                      rel="nofollow"
-                      href="http://paypal.me/OwerriJobHunt"
-                      target="_blank"
-                    >
-                      contribute a little amount
-                    </a>{" "}
-                    via PayPal to{" "}
-                    <a href="https://OwerriJobHunt.com/contact" target="_blank">
-                      support OwerriJobHunt
-                    </a>{" "}
-                    in creating new templates regularly.
+                  <p className="text-black font-normal">
+                  Upskill Network is a team of digital skill experts facilitating digital transformation across Nigeria through inclusive digital literacy training programs, business incubation and support, consulting and partnerships with government agencies and other institutions. 
+                  Our objective is to help the younger generation take off on the right path, empower them to solve real problems, create access to better opportunities within their immediate environment and in the world, and tune into the global technology and digital space which has since dominated the global agenda in other to secure a better future and compete effectively with their peers across the world.{" "}
                   </p>
                   <div className="row">
                     <div className="col-lg-4 col-sm-4">
@@ -57,8 +46,8 @@ const About = () => {
                           <div className="progress-value">
                             <div>
                               90%
+                              <h6 className="text-sm mx-2 mt-4">Jobs Available</h6>
                               <br />
-                              <span>Coding</span>
                             </div>
                           </div>
                         </div>
@@ -79,8 +68,8 @@ const About = () => {
                           <div className="progress-value">
                             <div>
                               80%
+                              <h6 className="text-sm mx-2 mt-4">Businessess Registered</h6>
                               <br />
-                              <span>Photoshop</span>
                             </div>
                           </div>
                         </div>
@@ -100,9 +89,8 @@ const About = () => {
                           </span>
                           <div className="progress-value">
                             <div>
-                              80%
-                              <br />
-                              <span>Animation</span>
+                            80%
+                              <h6 className="text-sm mx-2 mt-4">Candidate Registered</h6>
                             </div>
                           </div>
                         </div>

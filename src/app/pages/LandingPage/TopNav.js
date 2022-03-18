@@ -20,17 +20,17 @@ const TopNav = () => {
           <div className="col-lg-4 col-sm-4 col-5">
             <ul className="social-media">
               <li>
-                <a href="#">
+                <a href="https://instagram.com/upskill_network?utm_medium=copy_link">
+                <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/111700191454717/">
                   <i className="fa fa-facebook"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <i className="fa fa-behance"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
+                <a href="https://www.facebook.com/2377267902330692/">
                   <i className="fa fa-twitter"></i>
                 </a>
               </li>

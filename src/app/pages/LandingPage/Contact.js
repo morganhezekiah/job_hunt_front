@@ -10,7 +10,7 @@ const Contact = () => {
             >
               <h6>Contact Us</h6>
               <h4>
-                Get In Touch With Us <em>Now</em>
+                Get In Touch With Us For More <em>Inquiries</em>
               </h4>
               <div className="line-dec"></div>
             </div>
@@ -38,7 +38,7 @@ const Contact = () => {
                         <div className="info-post">
                           <div className="icon">
                             <img src="assets/images/phone-icon.png" alt="" />
-                            <a href="#">010-020-0340</a>
+                            <a href="#">+234 (0) 915 762 3156</a>
                           </div>
                         </div>
                       </div>
@@ -46,7 +46,7 @@ const Contact = () => {
                         <div className="info-post">
                           <div className="icon">
                             <img src="assets/images/email-icon.png" alt="" />
-                            <a href="#">our@email.com</a>
+                            <a href="#">Owerrijobhunt@gmail.com</a>
                           </div>
                         </div>
                       </div>
@@ -54,15 +54,16 @@ const Contact = () => {
                         <div className="info-post">
                           <div className="icon">
                             <img src="assets/images/location-icon.png" alt="" />
-                            <a href="#">123 Rio de Janeiro</a>
+                            <a href="#">15 Ajoku street behind UBA Bank wetheral road, Owerri, imo State</a>
                           </div>
                         </div>
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-lg-6 placeholder:font-bold">
                         <fieldset>
                           <input
                             type="name"
                             name="name"
+                            className="placeholder:font-bold"
                             id="name"
                             placeholder="Name"
                             reautocomplete="on"
@@ -74,6 +75,7 @@ const Contact = () => {
                             type="text"
                             name="email"
                             id="email"
+                            className="placeholder:font-bold"
                             pattern="[^ @]*@[^ @]*"
                             placeholder="Your Email"
                             required=""
@@ -84,6 +86,7 @@ const Contact = () => {
                             type="subject"
                             name="subject"
                             id="subject"
+                            className="placeholder:font-bold"
                             placeholder="Subject"
                             reautocomplete="on"
                           />

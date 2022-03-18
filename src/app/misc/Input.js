@@ -39,13 +39,14 @@ const Input = ({
                         onClick={() => setSecuredState(!securedState)}
                     >
                         {securedState ? (
+                            // <i class="fa-solid fa-eye"></i>
                             <i
-                                class="fas fa-eye-slash  cursor-pointer"
+                                className="fas fa-eye-slash  cursor-pointer"
                                 style={{ color: "#666AF6" }}
                             ></i>
                         ) : (
                             <i
-                                class="fas fa-eye cursor-pointer"
+                                className="fas fa-eye cursor-pointer"
                                 style={{ color: "#666AF6" }}
                             ></i>
                         )}

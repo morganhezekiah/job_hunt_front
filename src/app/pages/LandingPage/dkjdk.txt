@@ -48,7 +48,7 @@ const About = () => {
                           </span>
                           <div className="progress-value">
                             <div>
-                              2000
+                              90%
                               <h6 className="text-sm mx-2 mt-4">Jobs Available</h6>
                               <br />
                             </div>
@@ -92,7 +92,7 @@ const About = () => {
                           </span>
                           <div className="progress-value">
                             <div>
-                            900
+                            80%
                               <h6 className="text-sm mx-2 mt-4">Candidate Registered</h6>
                             </div>
                           </div>

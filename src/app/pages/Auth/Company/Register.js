@@ -86,27 +86,27 @@ const RegisterCompany = () => {
         e.preventDefault();
 
         companyName.length < 1
-            ? setCompanyNameError("Please enter Company Name")
+            ? setCompanyNameError("Please enter Buisness Name")
             : setCompanyNameError("");
 
         companyEmail.length < 1
-            ? setCompanyEmailError("Please enter Company Email")
+            ? setCompanyEmailError("Please enter Buisness Email")
             : setCompanyEmailError("");
 
         companyAddress.length < 1
-            ? setCompanyAddressError("Please enter Company Address")
+            ? setCompanyAddressError("Please enter Buisness Address")
             : setCompanyAddressError("");
 
         companyInterest.length < 1
-            ? setCompanyInterestError("Please enter Company Interest")
+            ? setCompanyInterestError("Please enter Buisness type")
             : setCompanyInterestError("");
 
         companyMobileContact.length < 1
-            ? setCompanyMobileContactError("Please enter Company Mobile Contact")
+            ? setCompanyMobileContactError("Please enter Buisness Mobile Contact")
             : setCompanyMobileContactError("");
 
         companyPassword.length < 1
-            ? setCompanyPasswordError("Please enter Company Password")
+            ? setCompanyPasswordError("Please enter Buisness Password")
             : setCompanyPasswordError("");
 
         companyAddress.length > 0 &&
@@ -125,13 +125,13 @@ const RegisterCompany = () => {
             <form onSubmit={handleUserRegisterRequest}>
                 <Input
                     onChange={(e) => setCompanyName(e.target.value)}
-                    label={"COMPANY NAME"}
+                    label={"BUSINESS NAME"}
                 />
                 <ErrorText text={companyNameError} />
 
                 <Input
                     onChange={(e) => setCompanyEmail(e.target.value)}
-                    label={"COMPANY EMAIL"}
+                    label={"BUSINESS EMAIL"}
                 />
                 <ErrorText text={companyEmailError} />
 
@@ -140,7 +140,7 @@ const RegisterCompany = () => {
                         className="text-black  mt-1 text-xs"
                         style={{ fontSize: "16px" }}
                     >
-                        Company Mobile Contact
+                        Buisness Mobile Contact
                     </label>
                     <ReactTelInput
                         defaultCountry="ng"
@@ -153,7 +153,7 @@ const RegisterCompany = () => {
 
                 <Input
                     onChange={(e) => setCompanyAddress(e.target.value)}
-                    label={"COMPANY ADDRESSS"}
+                    label={"BUSINESS ADDRESSS"}
                 />
                 <ErrorText text={companyAddressError} />
 
@@ -162,7 +162,7 @@ const RegisterCompany = () => {
                         className="text-black ml-5  mt-1 text-xs"
                         style={{ fontSize: "16px" }}
                     >
-                        Company Interest
+                        Buisness type
                     </label>
                     <div className="mx-2 my-0">
                         <Select
@@ -170,7 +170,7 @@ const RegisterCompany = () => {
                             onChange={(e) => {
                                 setCompanyInterest(e);
                             }}
-                            name="COMPANY INTEREST"
+                            name="BUSINESS TYPE"
                             style={{ width: "100%", flex: "3", backgroundColor: "#E8EEF3" }}
                             options={COMPANY_INTEREST_OPTION}
                             className="basic-multi-select p-2 rounded-sm text-black outline-none"
@@ -182,7 +182,7 @@ const RegisterCompany = () => {
 
                 <Input
                     onChange={(e) => setCompanyPassword(e.target.value)}
-                    label={"COMPANY PASSWORD"}
+                    label={"BUSINESS PASSWORD"}
                     secured={true}
                 />
                 <ErrorText text={companyPasswordError} />

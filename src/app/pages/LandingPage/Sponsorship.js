@@ -148,16 +148,6 @@ const Sponsorship = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col mx-auto bg-gray-900">
-        <h1 className="text-center text-3xl font-semiibold text-white mt-6">
-          Meet Owerri job hunts Sponsors
-        </h1>
-        <div className="flex mx-auto">
-          <img className="w-40 h-28 mx-4" src={Tv} alt="" />
-          <img className="w-40 h-28 mx-4" src={upskill} alt="" />
-          <img className="w-36 h-28 mt-6 mx-4" src={Harriet} alt="" />
-        </div>
-      </div>
     </>
   );
 };

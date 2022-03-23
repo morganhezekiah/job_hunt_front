@@ -11,9 +11,8 @@ import { useDispatch, useSelector } from "react-redux";
 import RegisterUserDispatcher from "../../store/dispatchers/Auth/Register";
 import { GET_USER_SLUG } from "../../misc/helpers/authTokenManager";
 import { DEFAULT_COLOR } from "../../misc/__colors__";
-import UserResendActivationEmail from "../../store/dispatchers/Auth/UserResendAccountActivationEmail";
 import Loader from "../../misc/Loader";
-
+import UserAccountCreatedConfirmation from "./UserAccountCreatedConfirmation";
  
 
 
@@ -71,29 +70,6 @@ const Register = () => {
     }
   }, [RegisterReducer.error, RegisterReducer.message, navigate]);
 
-  useEffect(() => {
-    if (UserResendActivationEmailData.message.length > 0) {
-      UserResendActivationEmailData.error
-        ? toast.error(UserResendActivationEmailData.message, {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          })
-        : toast.success(UserResendActivationEmailData.message, {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-    }
-  }, [UserResendActivationEmailData]);
 
   const handleUserRegisterRequest = async (e) => {
     e.preventDefault();
@@ -125,10 +101,7 @@ const Register = () => {
       dispatch(RegisterUserDispatcher({ email, password, fullName, age: 18 }));
   };
 
-  const handleRequestEmailResend = async (e) => {
-    e.preventDefault();
-    await dispatch(UserResendActivationEmail());
-  };
+
 
   return (
     <Wrapper
@@ -139,31 +112,7 @@ const Register = () => {
       }
     >
       {registeratonSuccess ? (
-        <div style={{ position: "relative", paddingBottom: "10px" }}>
-          <div class="notification success">
-            Success! Your Acccount was created successfully, please check your
-            email to continue.If you could not find your email on the mails
-            folder, check your spam folder too.
-          </div>
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            <div
-              style={{
-                opacity: AppLoading ? "0.5" : "1",
-                pointerEvents: AppLoading ? "none" : "all",
-              }}
-              className="border-first-button scroll-to-section"
-              onClick={handleRequestEmailResend}
-            >
-              <a
-                href="#"
-                className="primary"
-                style={{ marginTop: "10px", marginBottom: "10px" }}
-              >
-                Resend Activaion Email?
-              </a>
-            </div>
-          </div>
-        </div>
+        <UserAccountCreatedConfirmation />
       ) : (
         <>
           <form onSubmit={handleUserRegisterRequest}>

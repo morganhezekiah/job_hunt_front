@@ -17,7 +17,6 @@ import ReactTelInput from "react-telephone-input";
 import Loader from "../../../misc/Loader";
 import UserResendActivationEmail from "../../../store/dispatchers/Auth/UserResendAccountActivationEmail";
 
-
 const COMPANY_INTEREST_OPTION = [
   { value: "technology", label: "Technology" },
   { value: "agriculture", label: "Agriculture" },
@@ -30,7 +29,6 @@ const RegisterCompany = () => {
     (state) => state.RegisterCompanyReducer
   );
   const AppLoading = useSelector((state) => state.AppLoadingReducer.loading);
-  const [registeratonSuccess, setRegisteratonStatus] = useState(false);
 
   const [companyName, setCompanyName] = useState("");
   const [companyAddress, setCompanyAddress] = useState("");
@@ -78,7 +76,7 @@ const RegisterCompany = () => {
             progress: undefined,
           });
 
-          !RegisterCompanyReducer.error && setRegisteratonStatus(true);
+      !RegisterCompanyReducer.error && navigate("/companies/login");
     }
   }, [RegisterCompanyReducer.error, RegisterCompanyReducer.message, navigate]);
 
@@ -86,27 +84,27 @@ const RegisterCompany = () => {
     e.preventDefault();
 
     companyName.length < 1
-      ? setCompanyNameError("Please enter Company Name")
+      ? setCompanyNameError("Please enter Buisness Name")
       : setCompanyNameError("");
 
     companyEmail.length < 1
-      ? setCompanyEmailError("Please enter Company Email")
+      ? setCompanyEmailError("Please enter Buisness Email")
       : setCompanyEmailError("");
 
     companyAddress.length < 1
-      ? setCompanyAddressError("Please enter Company Address")
+      ? setCompanyAddressError("Please enter Buisness Address")
       : setCompanyAddressError("");
 
     companyInterest.length < 1
-      ? setCompanyInterestError("Please enter Company Interest")
+      ? setCompanyInterestError("Please enter Buisness type")
       : setCompanyInterestError("");
 
     companyMobileContact.length < 1
-      ? setCompanyMobileContactError("Please enter Company Mobile Contact")
+      ? setCompanyMobileContactError("Please enter Buisness Mobile Contact")
       : setCompanyMobileContactError("");
 
     companyPassword.length < 1
-      ? setCompanyPasswordError("Please enter Company Password")
+      ? setCompanyPasswordError("Please enter Buisness Password")
       : setCompanyPasswordError("");
 
     companyAddress.length > 0 &&
@@ -127,139 +125,107 @@ const RegisterCompany = () => {
       );
   };
 
-  const handleRequestEmailResend = async (e) => {
-    e.preventDefault();
-    await dispatch(UserResendActivationEmail(true));
-  };
-
   return (
-    <Wrapper
-      title={
-        registeratonSuccess
-          ? "Account Created Successfully"
-          : "REGISTER FOR AN ONLINE CLASS"
-      }
-    >
-      {registeratonSuccess ? (
-        <div style={{ position: "relative", paddingBottom: "10px" }}>
-          <div class="notification success">
-            Success! Your Company Acccount was created successfully, please check your
-            email to continue.If you could not find your email on the mails
-            folder, check your spam folder too.
-          </div>
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            <div
-              style={{
-                opacity: AppLoading ? "0.5" : "1",
-                pointerEvents: AppLoading ? "none" : "all",
+    <Wrapper title="REGISTER COMPANY NOW">
+      <form onSubmit={handleUserRegisterRequest}>
+        <Input
+          onChange={(e) => setCompanyName(e.target.value)}
+          label={"BUSINESS NAME"}
+        />
+        <ErrorText text={companyNameError} />
+
+        <Input
+          onChange={(e) => setCompanyEmail(e.target.value)}
+          label={"BUSINESS EMAIL"}
+        />
+        <ErrorText text={companyEmailError} />
+
+        <div className="mx-5 my-2">
+          <label
+            className="text-black  mt-1 text-xs"
+            style={{ fontSize: "16px" }}
+          >
+            Buisness Mobile Contact
+          </label>
+          <ReactTelInput
+            defaultCountry="ng"
+            onChange={(telNumber, selectedCountry) =>
+              setCompanyMobileContact(telNumber)
+            }
+          />
+        </div>
+        <ErrorText text={companyMobileContactError} />
+
+        <Input
+          onChange={(e) => setCompanyAddress(e.target.value)}
+          label={"BUSINESS ADDRESSS"}
+        />
+        <ErrorText text={companyAddressError} />
+
+        <div>
+          <label
+            className="text-black ml-5  mt-1 text-xs"
+            style={{ fontSize: "16px" }}
+          >
+            Buisness type
+          </label>
+          <div className="mx-2 my-0">
+            <Select
+              isMulti
+              onChange={(e) => {
+                setCompanyInterest(e);
               }}
-              className="border-first-button scroll-to-section"
-              onClick={handleRequestEmailResend}
-            >
-              <a
-                href="#"
-                className="primary"
-                style={{ marginTop: "10px", marginBottom: "10px" }}
-              >
-                Resend Activaion Email?
-              </a>
-            </div>
+              name="BUSINESS TYPE"
+              style={{ width: "100%", flex: "3", backgroundColor: "#E8EEF3" }}
+              options={COMPANY_INTEREST_OPTION}
+              className="basic-multi-select p-2 rounded-sm text-black outline-none"
+              getValue={() => {}}
+            />
+            <ErrorText text={companyInterestError} />
           </div>
         </div>
-      ) : (
-        <>
-          {" "}
-          <form onSubmit={handleUserRegisterRequest}>
-            <Input
-              onChange={(e) => setCompanyName(e.target.value)}
-              label={"COMPANY NAME"}
-            />
-            <ErrorText text={companyNameError} />
 
-            <Input
-              onChange={(e) => setCompanyEmail(e.target.value)}
-              label={"COMPANY EMAIL"}
-            />
-            <ErrorText text={companyEmailError} />
+        <Input
+          onChange={(e) => setCompanyPassword(e.target.value)}
+          label={"BUSINESS PASSWORD"}
+          secured={true}
+        />
+        <ErrorText text={companyPasswordError} />
 
-            <div className="mx-5 my-2">
-              <label
-                className="text-black  mt-1 text-xs"
-                style={{ fontSize: "16px" }}
-              >
-                Company Mobile Contact
-              </label>
-              <ReactTelInput
-                defaultCountry="ng"
-                onChange={(telNumber, selectedCountry) =>
-                  setCompanyMobileContact(telNumber)
-                }
-              />
-            </div>
-            <ErrorText text={companyMobileContactError} />
+        <Button
+          title="REGISTER"
+          disabled={AppLoading}
+          onClick={handleUserRegisterRequest}
+        />
+        <ErrorText text={companyInterestError} />
 
-            <Input
-              onChange={(e) => setCompanyAddress(e.target.value)}
-              label={"COMPANY ADDRESSS"}
-            />
-            <ErrorText text={companyAddressError} />
+        <Input
+          onChange={(e) => setCompanyPassword(e.target.value)}
+          label={"COMPANY PASSWORD"}
+          secured={true}
+        />
+        <ErrorText text={companyPasswordError} />
 
-            <div>
-              <label
-                className="text-black ml-5  mt-1 text-xs"
-                style={{ fontSize: "16px" }}
-              >
-                Company Interest
-              </label>
-              <div className="mx-2 my-0">
-                <Select
-                  isMulti
-                  onChange={(e) => {
-                    setCompanyInterest(e);
-                  }}
-                  name="COMPANY INTEREST"
-                  style={{
-                    width: "100%",
-                    flex: "3",
-                    backgroundColor: "#E8EEF3",
-                  }}
-                  options={COMPANY_INTEREST_OPTION}
-                  className="basic-multi-select p-2 rounded-sm text-black outline-none"
-                  getValue={() => {}}
-                />
-                <ErrorText text={companyInterestError} />
-              </div>
-            </div>
-
-            <Input
-              onChange={(e) => setCompanyPassword(e.target.value)}
-              label={"COMPANY PASSWORD"}
-              secured={true}
-            />
-            <ErrorText text={companyPasswordError} />
-
-            <Button
-              title={
-                AppLoading ? (
-                  <Loader small width="1rem" height="1rem" color="#fff" />
-                ) : (
-                  "Register"
-                )
-              }
-              disabled={AppLoading}
-              onClick={handleUserRegisterRequest}
-            />
-          </form>
-          <div style={{ padding: 4 }}>
-            <Link
-              to="/companies/login"
-              style={{ fontSize: "13px", color: DEFAULT_COLOR }}
-            >
-              I already have a registered company?
-            </Link>
-          </div>
-        </>
-      )}
+        <Button
+          title={
+            AppLoading ? (
+              <Loader small width="1rem" height="1rem" color="#fff" />
+            ) : (
+              "Register"
+            )
+          }
+          disabled={AppLoading}
+          onClick={handleUserRegisterRequest}
+        />
+      </form>
+      <div style={{ padding: 4 }}>
+        <Link
+          to="/companies/login"
+          style={{ fontSize: "13px", color: DEFAULT_COLOR }}
+        >
+          I already have a registered company?
+        </Link>
+      </div>
     </Wrapper>
   );
 };
